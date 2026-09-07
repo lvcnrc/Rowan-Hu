@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#071a14" />
+  <meta name="description" content="Rowan Hu 的个人博客：项目、工具、学习与研究。" />
+
+  <title>Rowan Hu 的个人博客</title>
+
+  <!--
+    维护提示：
+    1. 页面内容主要改这里。
+    2. 视觉样式在 style.css。
+    3. 动画和少量交互在 script.js。
+    4. GitHub Pages 可直接部署，无需服务器。
+  -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- 背景装饰：纯 CSS + JS 轻微位移，不承载任何内容 -->
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header glass">
+    <a class="brand" href="#top" aria-label="返回首页">
+      <span class="brand-mark">RH</span>
+      <span class="brand-text">Rowan Hu</span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a href="#projects">项目</a>
+      <a href="#tools">工具</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero：主页最核心的视觉区域 -->
+    <section class="hero section-shell">
+      <div class="hero-card glass reveal">
+        <div class="eyebrow">PERSONAL BLOG · SHENZHEN</div>
+
+        <h1>
+          Rowan Hu 的
+          <span class="accent-word">个人博客</span>
+        </h1>
+
+        <p class="intro">
+          数学与应用数学本科生。正在学习
+          <strong>Python</strong>、<strong>金融</strong>与
+          <strong>量化研究</strong>，希望把这里做成长期积累的项目档案与个人知识库。
+        </p>
+
+        <div class="actions">
+          <a class="button button-primary" href="#projects">
+            <span>项目</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#tools">
+            <span>工具</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>持续建设中 · Keep building.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目：以后可以把 card 复制多份继续加 -->
+    <section id="projects" class="content-section section-shell reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">PROJECTS</p>
+          <h2>项目</h2>
+        </div>
+        <p>以后放量化回测、Python 数据分析、课程项目和研究复现。</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="mini-card glass">
+          <span class="card-index">01</span>
+          <h3>Quant Research</h3>
+          <p>预留给量化策略、因子研究、回测结果与研究笔记。</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+
+        <article class="mini-card glass">
+          <span class="card-index">02</span>
+          <h3>Python Projects</h3>
+          <p>预留给数据处理、可视化、统计分析与自动化工具。</p>
+          <span class="coming-soon">Coming soon</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 工具：以后可放你写的小工具、在线计算器、脚本等 -->
+    <section id="tools" class="content-section section-shell reveal">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">TOOLS</p>
+          <h2>工具</h2>
+        </div>
+        <p>这里可以逐步放自己写的小工具、数据处理页面或常用资源。</p>
+      </div>
+
+      <div class="tool-strip glass">
+        <span class="tool-pill">Python</span>
+        <span class="tool-pill">Git</span>
+        <span class="tool-pill">Statistics</span>
+        <span class="tool-pill">Quant</span>
+        <span class="tool-pill muted">More soon</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>© <span id="year"></span> Rowan Hu.</p>
+    <p class="footer-note">Built slowly, kept for a long time.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
